@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Kool-Stuf</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene vr-mode-ui="enabled:false;">
+      <a-entity position="0 880 1290" rotation="-34 0 0">
+       <a-entity id="camera" camera="near:1000; far:4000; fov:2.2">
+       </a-entity>
+      </a-entity>
+      <a-entity id="A" rotation="0 45 0">
+      <a-entity position="0 0 10.75" rotation="-20 0 0" scale="1 0.0001 1" animation="property: object3D.scale.y; from:0.0001; to:1; dur:1000; delay:200; easing: easeOutCubic;">
+        <a-box position="0 15 0" height="30" depth="1" width="12.5" color="red">
+            <a-entity position="0 15 0" rotation="-140 0 0" scale="1 0.0001 1" animation="property: object3D.scale.y; from:0.0001; to:1; dur:1000; delay:800; easing: easeOutCubic;">
+                <a-box position="0 15 0" height="30" depth="1" width="12.5" color="red"></a-box>
+                <a-box position="0 15 -0.5" height="30" depth="0.01" width="12.5" color="#ade6e6"></a-box>
+            </a-entity>
+        </a-box>
+      </a-entity>
+      <a-entity position="0 8 7.5" rotation="-90 0 0" scale="1 0.0001 1" animation="property: object3D.scale.y; from:0.0001; to:1; dur:1000; delay:1200; easing: easeOutCubic;">
+        <a-box position="0 7 0" height="14" depth="1" width="12.5" color="red"></a-box>
+        <a-box position="0 7 0.5" height="14" depth="0.01" width="12.5" color="#ade6e6">
+        </a-box>
+      </a-entity>
+       <a-box position="-35 45 0" height="2.5" width="5" depth="7.5" color="gray" opacity="0.5" animation="property: position; to:25 -35 0; dur:3000; loop:true; easing: easeInOutCirc" >
+       </a-box>
+      </a-entity>
+    </a-scene>
+</body>
+</html>
